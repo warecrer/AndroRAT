@@ -85,8 +85,8 @@ public class LauncherActivity extends Activity {
 		portfield = (EditText) findViewById(R.id.portfield);
 
 		if (myIp == "") {
-			ipfield.setText("2.236.142.58");
-			portfield.setText("1337");
+			ipfield.setText(""); //insert ip
+			portfield.setText(""); //insert port
 			Client.putExtra("IP", ipfield.getText().toString());
 			Client.putExtra("PORT", Integer.parseInt(portfield.getText().toString()));
 		} else {
